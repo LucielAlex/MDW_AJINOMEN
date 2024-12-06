@@ -16,7 +16,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: https://mdw-front.onrender.com,
+    origin: 'https://mdw-front.onrender.com',
   })
 );
 app.use(express.json());
