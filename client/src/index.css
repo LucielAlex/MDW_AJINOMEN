@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #202020;
+  color: white;
+}
+
+.content-container {
+  height: calc(100vh - theme("spacing.20"));
+}
+
+
+/* Fondo para rutas específicas */
+body.not-authenticated {
+  background-image: url('../public/fondoRegister.png'); /* Cambia a la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black; /* Color de respaldo */
+  color: white;
+}
+
+
